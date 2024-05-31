@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.crm.listenersCode.DwsLogin"></listener>
+</listeners>
+  <test thread-count="6" name="Test">
+  <parameter name="url" value="https://demowebshop.tricentis.com/"></parameter>
+  <groups>
+  <run><include name="regration"></include></run>
+  </groups>
+    <classes>
+    <class name="testNgFashion.Ajio"/>
+      <class name="testNgFashion.Myntra"/>
+      <class name="TestNgBatchExecution.MakeMyTrip"/>
+      <class name="TestNgBatchExecution.AbhiAbhi"/>
+      <class name="TestNgBatchExecution.Dws"/>
+      <class name="testNgFashion.Flipkart"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
